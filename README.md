@@ -14,7 +14,7 @@ Thanks to [thoughtbot](http://thoughtbot.com/) from whom this guides are based.
 
 ![groupbuddies](http://www.groupbuddies.com/logo.png)
 
-This guides are maintained by [Group Buddies](http://groupbuddies.com/team)
+This guides are maintained by [Group Buddies](http://groupbuddies.com)
 The names and logos for Group Buddies are trademarks of GB-Software As A Service, Lda.
 
 This guides are © 2012 GB-Software As A Service, Lda. They are distributed under the [Creative Commons
