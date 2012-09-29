@@ -10,12 +10,12 @@ Guides for getting things done, programming well, and programming in style.
 Credits
 -------
 
-Thank you, [contributors](/thoughtbot/guides/graphs/contributors)!
+Thanks to [thoughtbot](http://thoughtbot.com/) from whom this guides are based.
 
-![thoughtbot](http://thoughtbot.com/images/tm/logo.png)
+![groupbuddies](http://www.groupbuddies.com/logo.png)
 
-Guides is maintained by [thoughtbot, inc](http://thoughtbot.com/community)
-The names and logos for thoughtbot are trademarks of thoughtbot, inc.
+This guides are maintained by [Group Buddies](http://groupbuddies.com/team)
+The names and logos for Group Buddies are trademarks of GB-Software As A Service, Lda.
 
-Guides is © 2012 thoughtbot, inc. It is distributed under the [Creative Commons
+Guides is © 2012 GB-Software As A Service, Lda. It is distributed under the [Creative Commons
 Attribution License](http://creativecommons.org/licenses/by/3.0/).
