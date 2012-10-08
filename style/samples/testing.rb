@@ -1,15 +1,17 @@
-describe SomeClass, '#some_method' do
-  it 'does something' do
-    something.should eq 'something'
-  end
-end
-
-describe SomeClass, '#other_method' do
-  it 'does something in one case' do
+describe SomeClass do
+  context '#some_method' do
+    it 'does something' do
+      something.should eq 'something'
+    end
   end
 
-  it 'does something else in other cases' do
-  end
+  context '#other_method' do
+    it 'does something in one case' do
+    end
 
-  # methods go here
+    it 'does something else in other cases' do
+    end
+
+    # methods go here
+  end
 end
