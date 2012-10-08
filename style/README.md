@@ -31,7 +31,7 @@ Git
 Formatting
 ----------
 
-* Avoid inline comments.
+* Avoid comments.
 * Prefer breaking long lines after 80 characters.
 * Delete trailing whitespace.
 * Don't include spaces after `(`, `[` or before `]`, `)`.
@@ -41,7 +41,7 @@ Formatting
 * Indent continued lines two spaces.
 * Indent private methods equal to public methods.
 * Use 2 space indentation (no tabs).
-* Use an empty line between methods.
+* Use an empty line between methods and other changes of concept (validations, filters, ...).
 * Use spaces around operators, after commas, after colons and semicolons, around
   `{` and before `}`.
 
@@ -54,6 +54,8 @@ Naming
 * Name variables, methods, and classes to reveal intent.
 * Treat acronyms as words in names (`XmlHttpRequest` not `XMLHTTPRequest`),
   even if the acronym is the entire name (`class Html` not `class HTML`).
+* Spend time thinking on the name of things so that you don't spend afterwards
+  trying to decifer your own code.
 
 JavaScript
 ----------
