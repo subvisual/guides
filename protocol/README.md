@@ -6,52 +6,26 @@ A guide for getting things done.
 Set up laptop
 -------------
 
-Set up your laptop with [this script](/thoughtbot/laptop)
-and [these dotfiles](/thoughtbot/dotfiles).
+Set up your laptop with [this script](/thoughtbot/laptop) if you have a mac, otherwise install the specified libraries and 
+try to follow the steps.
 
 Create Rails app
 ----------------
 
-Get Suspenders.
+Create a rails project locally
 
-    gem install suspenders
-
-Create the app.
-
-    suspenders app --heroku true --github organization/app
+    rails new app
 
 Set up Rails app
 ----------------
 
-Get the code.
-
-    git clone git@github.com:organization/app.git
+Create a github repo on http://github.com and follow the instructions to add your code to the repo.
 
 Set up the app's dependencies.
 
-    cd project
+    cd dummy
     bundle --binstubs
     rake db:setup
-
-Add Heroku remotes for staging and production environments.
-
-    git remote add staging git@heroku.com:<app>-staging.git
-    git remote add production git@heroku.com:<app>-production.git
-
-Use [Heroku config](/ddollar/heroku-config) to get `ENV`
-variables.
-
-    heroku config:pull -r staging
-
-Delete extra lines in `.env`, leaving only those needed for app to function
-properly. For example: `BRAINTREE_MERCHANT_ID` and `S3_SECRET`.
-
-Use [Foreman](http://goo.gl/oy4uw) to run the app locally.
-
-    foreman start
-
-It uses your `.env` file and `Procfile` to run processes just like Heroku's
-[Cedar](https://devcenter.heroku.com/articles/cedar/) stack.
 
 Write a feature
 ---------------
@@ -86,9 +60,7 @@ Share your branch.
 
     git push origin [branch]
 
-Submit a [Github pull request](http://goo.gl/Kmdee).
-
-Ask for a code review in [Campfire](http://campfirenow.com).
+Submit a [Github pull request](http://goo.gl/Kmdee) or if you have permission to merge immediately (not advised).
 
 Review code
 -----------
@@ -96,7 +68,7 @@ Review code
 A team member other than the author reviews the pull request.
 
 They make comments and ask questions directly on lines of code in the Github
-web interface or in Campfire.
+web interface.
 
 For changes which they can make themselves, they check out the branch.
 
@@ -138,38 +110,4 @@ Delete your local feature branch.
 Deploy
 ------
 
-View a list of new commits. View changed files. Deploy to
-[Heroku](https://devcenter.heroku.com/articles/quickstart) staging.
-
-    git fetch staging
-    git log staging/master..master
-    git diff --stat staging/master
-    git push staging
-
-Run migrations (if necessary).
-
-    heroku run rake db:migrate -r staging
-
-Restart the dynos if migrations were run.
-
-    heroku restart -r staging
-
-[Introspect](http://goo.gl/tTgVF) to make sure everything's ok.
-
-    watch heroku ps -r staging
-
-Test the feature in browser.
-
-Deploy to production.
-
-    git fetch production
-    git log production/master..master
-    git diff --stat production/master
-    git push production
-    heroku run rake db:migrate -r production
-    heroku restart -r production
-    watch heroku ps -r production
-
-Watch logs and metrics dashboards.
-
-Close pull request and comment `Merged.`
+Ask the Sys Admin! 
