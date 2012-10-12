@@ -6,7 +6,7 @@ A guide for getting things done.
 Set up laptop
 -------------
 
-Set up your laptop with [this script](/thoughtbot/laptop) if you have a mac, otherwise install the specified libraries and 
+Set up your laptop with [this script](/groupbuddies/laptop) if you have a mac, otherwise install the specified libraries and 
 try to follow the steps.
 
 Create Rails app
