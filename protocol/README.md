@@ -14,12 +14,12 @@ Create Rails app
 
 Create a rails project locally
 
-    rails new app
+    rails new dummy
 
 Set up Rails app
 ----------------
 
-Create a github repo on http://github.com and follow the instructions to add your code to the repo.
+Create a github repo on http://github.com/new and follow the instructions to add your code to the repo.
 
 Set up the app's dependencies.
 
