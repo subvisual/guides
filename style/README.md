@@ -163,4 +163,4 @@ Testing
 * Each of these phases must be present, unless it does not exist.
 * Use an `it` example for each execution path through the method.
 * Use [stubs and spies](http://goo.gl/EciDJ) (not mocks) in isolated tests.
-* Use shared contexts but include it explicitly with `include_context`
+* Use shared contexts but include them explicitly with `include_context`
