@@ -74,7 +74,7 @@ CoffeeScript
 Ruby
 ----
 
-[Sample](/thoughtbot/guides/blob/master/style/samples/ruby.rb)
+[Sample](/groupbuddies/guides/blob/master/style/samples/ruby.rb)
 
 * Avoid conditional modifiers (lines that end with conditionals).
 * Avoid ternary operators (`boolean ? true : false`). Use multi-line `if`
@@ -101,7 +101,7 @@ Ruby
 ERb
 ---
 
-[Sample](/thoughtbot/guides/blob/master/style/samples/erb.rb)
+[Sample](/groupbuddies/guides/blob/master/style/samples/erb.rb)
 
 * When wrapping long lines, keep the method name on the same line as the ERb.
   interpolation operator and keep each method argument on its own line.
@@ -145,21 +145,22 @@ Email
 Testing
 -------
 
-[Sample](/thoughtbot/guides/blob/master/style/samples/testing.rb)
+[Sample](/groupbuddies/guides/blob/master/style/samples/testing.rb)
 
 * Avoid `its`, `let`, `let!`, `specify`, `before`, and `subject`.
 * Avoid using instance variables in tests.
 * Don't prefix `it` block descriptions with 'should'.
 * Don't name outer `describe` blocks.
-* Use `context` blocks for each method under test and name them accordingly.Use `.method`
+* Use `context` blocks for each method under test and name them accordingly. Use `.method`
   for class methods and `#method` for instance methods.
-* Prefer fixtures to factories.  
+* Prefer factories to fixtures.  
 * Order factories.rb: sequences, traits, factory definitions.
 * Order factory attributes: implicit attributes, explicit attributes,
   child factory definitions. Each section's attributes are alphabetical.
 * Order factory definitions alphabetically by factory name.
 * Prefer `eq` to `==` in RSpec.
 * Separate setup, exercise, verification, and teardown phases with newlines.
+* Each of these phases must be present, unless it does not exist.
 * Use an `it` example for each execution path through the method.
-* Use one factories.rb file per project.
 * Use [stubs and spies](http://goo.gl/EciDJ) (not mocks) in isolated tests.
+* Use shared contexts but include it explicitly with `include_context`
