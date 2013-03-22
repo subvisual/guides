@@ -7,7 +7,7 @@ Trello boards:
 * Bugs
 * Current
 * Planning
-* Refactoring
+* Engineering & Refactoring
 
 ![Current](https://dl.dropbox.com/u/830556/current.png)
 
