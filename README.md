@@ -3,6 +3,7 @@ Guides
 
 Guides for getting things done, programming well, and programming in style.
 
+* [Trello](/trello)
 * [Protocol](/protocol)
 * [Best Practices](/best-practices)
 * [Style](/style)
