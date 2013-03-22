@@ -9,7 +9,7 @@ Trello boards:
 * Planning
 * Refactoring
 
-![Current](http://f.cl.ly/items/3H3i1M0Q1G1s2V3I433S/Screen%20Shot%202013-02-25%20at%209.08.22%20AM.png)
+![Current](https://dl.dropbox.com/u/830556/current.png)
 
 Cards from Planning, Bugs, Refactor boards are pulled into the Next Up
 list on the Current board as described in the "Weekly Product Meeting" section below.
@@ -89,8 +89,6 @@ The goal is to make sure everyone knows what's going on with the product and to 
 
 Building and Shipping
 ---------------------
-
-![Shipping](http://f.cl.ly/items/2h2d2Z1z0X3s0n3d3y0R/Screen%20Shot%202012-12-02%20at%2010.03.44%20AM.png)
 
 The cards in the Next Up list are prioritized, vetted, and ready for design & development. A designer or developer "puts their face on it" by assigning it to themselves and pulling it into the In Progress list.
 
