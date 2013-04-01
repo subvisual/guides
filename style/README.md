@@ -32,7 +32,6 @@ Formatting
 ----------
 
 * Avoid comments.
-* Prefer breaking long lines after 80 characters.
 * Delete trailing whitespace.
 * Don't include spaces after `(`, `[` or before `]`, `)`.
 * Don't vertically align tokens on consecutive lines.
@@ -153,7 +152,7 @@ Testing
 * Don't name outer `describe` blocks.
 * Use `context` blocks for each method under test and name them accordingly. Use `.method`
   for class methods and `#method` for instance methods.
-* Prefer factories to fixtures.  
+* Prefer factories to fixtures.
 * Order factories.rb: sequences, traits, factory definitions.
 * Order factory attributes: implicit attributes, explicit attributes,
   child factory definitions. Each section's attributes are alphabetical.
