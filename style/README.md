@@ -78,6 +78,7 @@ Ruby
 * Avoid conditional modifiers (lines that end with conditionals).
 * Avoid ternary operators (`boolean ? true : false`). Use multi-line `if`
   instead to emphasize code branches.
+* Avoid `{...}` for blocks. Prefer `do..end`.
 * Define the project's [Ruby version in the
   Gemfile](http://gembundler.com/man/gemfile.5.html#RUBY-ruby-).
 * Prefer `detect` over `find`.
@@ -88,7 +89,6 @@ Ruby
 * Use `_` for unused block parameters.
 * Use `%{}` for single-line strings needing interpolation and double-quotes.
 * Use `&&` and `||` for Boolean expressions.
-* Use `{...}` for single-line blocks. Use `do..end` for multi-line blocks.
 * Use `?` suffix for predicate methods.
 * Use `CamelCase` for classes and modules, `snake_case` for variables and
   methods, `SCREAMING_SNAKE_CASE` for constants.
