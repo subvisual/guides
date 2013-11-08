@@ -3,12 +3,6 @@ Protocol
 
 A guide for getting things done.
 
-Set up laptop
--------------
-
-Set up your laptop with [this script](/groupbuddies/laptop) if you have a mac, otherwise install the specified libraries and 
-try to follow the steps.
-
 Create Rails app
 ----------------
 
@@ -20,6 +14,7 @@ Set up Rails app
 ----------------
 
 Create a github repo on http://github.com/new and follow the instructions to add your code to the repo.
+Create a `dev` branch
 
 Set up the app's dependencies.
 
@@ -30,16 +25,17 @@ Set up the app's dependencies.
 Write a feature
 ---------------
 
-Create a local feature branch based off master.
+Create a local feature branch based off dev.
 
-    git checkout master
-    git pull --rebase
+    git checkout dev
+    git fetch
+    git rebase
     git checkout -b your-initials-new-feature
 
 Rebase frequently to incorporate upstream changes.
 
     git fetch origin
-    git rebase origin/master
+    git rebase origin/dev
     <resolve conflicts>
 
 When feature is complete and tests pass, commit the changes.
@@ -60,12 +56,12 @@ Share your branch.
 
     git push origin [branch]
 
-Submit a [Github pull request](http://goo.gl/Kmdee) or if you have permission to merge immediately (not advised).
+Submit a [Github pull request](http://goo.gl/Kmdee) or if you have permission to, merge immediately (not advised).
 
 Review code
 -----------
 
-A team member other than the author reviews the pull request.
+A team member(s) other than the author reviews the pull request.
 
 They make comments and ask questions directly on lines of code in the Github
 web interface.
@@ -75,7 +71,7 @@ For changes which they can make themselves, they check out the branch.
     git checkout <branch>
     rake db:migrate
     rake
-    git diff staging/master..HEAD
+    git diff staging/dev..HEAD
 
 They make small changes right in the branch, test the feature in browser,
 run tests, commit, and push.
@@ -88,14 +84,15 @@ Merge
 Rebase interactively. Squash commits like "Fix whitespace" into one or a
 small number of valuable commit(s). Edit commit messages to reveal intent.
 
-    git rebase -i origin/master
+    git rebase -i origin/dev
+    <resolve conflicts>
     rake
 
-View a list of new commits. View changed files. Merge branch into master.
+View a list of new commits. View changed files. Merge branch into dev.
 
-    git log origin/master..[branch]
-    git diff --stat origin/master
-    git checkout master
+    git log origin/dev..[branch]
+    git diff --stat origin/dev
+    git checkout dev
     git merge [branch] --ff-only
     git push
 
@@ -110,4 +107,9 @@ Delete your local feature branch.
 Deploy
 ------
 
-Ask the Sys Admin! 
+Use the Semaphoreapp on-click deploy button, if it is setup. Alternatively, run:
+
+    bundle exec cap [production|staging] deploy
+
+Keep an eye on it to make sure everything went smoothly. Sometimes you'll need to
+restart services that failed to do so automatically.
