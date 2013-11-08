@@ -4,8 +4,8 @@ Guides
 Guides for getting things done, programming well, and programming in style.
 
 * [Trello](/trello)
-* [Protocol](/protocol)
 * [Best Practices](/best-practices)
+* [Protocol](/protocol)
 * [Style](/style)
 * [Code Review](/code-review)
 
