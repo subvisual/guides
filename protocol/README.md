@@ -30,7 +30,9 @@ Create a local feature branch based off dev.
     git checkout dev
     git fetch
     git rebase
-    git checkout -b your-initials-new-feature
+    git checkout -b <branch-name>
+
+Prefix the branch name with your initials.
 
 Rebase frequently to incorporate upstream changes.
 
@@ -38,37 +40,46 @@ Rebase frequently to incorporate upstream changes.
     git rebase origin/dev
     <resolve conflicts>
 
-When feature is complete and tests pass, commit the changes.
+When feature is complete and tests pass, stage the changes.
 
     rake
-    git add -A
-    git status
-    git commit -v
+    git add --all
 
-Write a [good commit message](http://goo.gl/w11us).
+When you've staged the changes, commit them.
+
+    git status
+    git commit --verbose
+
+Write a [good commit message]. Example format:
 
     Present-tense summary under 50 characters
 
     * More information about commit (under 72 characters).
     * More information about commit (under 72 characters).
 
+    http:://project.management-system.com/ticket/123
+
 Share your branch.
 
-    git push origin [branch]
+    git push origin <branch-name>
+
+Submit a [GitHub pull request].
 
 Submit a [Github pull request](http://goo.gl/Kmdee) or if you have permission to, merge immediately (not advised).
 
 Review code
 -----------
 
-A team member(s) other than the author reviews the pull request.
+Team member(s) other than the author reviews the pull request. They follow
+[Code Review](../code-review) guidelines to avoid
+miscommunication.
 
 They make comments and ask questions directly on lines of code in the Github
 web interface.
 
 For changes which they can make themselves, they check out the branch.
 
-    git checkout <branch>
+    git checkout <branch-name>
     rake db:migrate
     rake
     git diff staging/dev..HEAD
@@ -84,25 +95,25 @@ Merge
 Rebase interactively. Squash commits like "Fix whitespace" into one or a
 small number of valuable commit(s). Edit commit messages to reveal intent.
 
+    git fetch origin
     git rebase -i origin/dev
-    <resolve conflicts>
     rake
 
 View a list of new commits. View changed files. Merge branch into dev.
 
-    git log origin/dev..[branch]
+    git log origin/dev..<branch>
     git diff --stat origin/dev
     git checkout dev
-    git merge [branch] --ff-only
+    git merge <branch> --ff-only
     git push
 
 Delete your remote feature branch.
 
-    git push origin :[branch]
+    git push origin --delete <branch-name>
 
 Delete your local feature branch.
 
-    git branch -d [branch]
+    git branch --delete <branch-name>
 
 Deploy
 ------
@@ -111,5 +122,4 @@ Use the Semaphoreapp on-click deploy button, if it is setup. Alternatively, run:
 
     bundle exec cap [production|staging] deploy
 
-Keep an eye on it to make sure everything went smoothly. Sometimes you'll need to
-restart services that failed to do so automatically.
+Make sure everything's ok. Sometimes you'll need to manually restart services.
