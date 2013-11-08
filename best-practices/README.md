@@ -16,12 +16,13 @@ Object-Oriented Design
 ----------------------
 
 * Avoid global variables.
-* Avoid long parameter lists.
+* Avoid long parameter lists (no more than 4).
 * Limit collaborators of an object (entities an object depends on).
 * Limit an object's dependencies (entities that depend on an object).
 * Prefer composition over inheritance.
-* Prefer small methods. One line is best.
-* Prefer small objects with a single, well-defined responsibility.
+* Prefer small methods (between one and five lines).
+* Prefer small objects with a single, well-defined responsibility (no more than
+  100 lines).
 * [Tell, don't ask](http://goo.gl/Ztawt).
 
 Ruby
