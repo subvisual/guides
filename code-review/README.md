@@ -57,7 +57,7 @@ Understand why the code is necessary (bug, user experience, refactoring). Then:
   them. ("What do you think about using a custom validator here?")
 * Seek to understand the author's perspective.
 * Sign off on the pull request with a :thumbsup: or "Ready to merge" comment.
-* If someone's already reviewing a pull request, do not intervene unless
+* If someone's already reviewing a pull request, avoid intervening unless
 called upon.
 
 Style comments
