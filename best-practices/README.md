@@ -11,6 +11,8 @@ General
 * Don't write code that guesses at future functionality.
 * [Exceptions should be exceptional](http://www.readability.com/~/yichhgvu).
 * [Keep the code simple](http://www.readability.com/~/ko2aqda2).
+* Avoid premature optimizations. Get a version 1.0 out there as soon as you
+  can. Until you have some users to measure, you're optimizing based on guesses
 
 Object-Oriented Design
 ----------------------
