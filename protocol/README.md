@@ -152,5 +152,5 @@ project maybe someone else can pitch in or at least read it, if not use the
 Danger Room. If the conversation does not fit any of the rooms, question
 yourself if you should be having it on the company's Hipchat.
 * Avoid tagging people.
-* Prefer using `@all`, which applies only to the people already on a room.
+* Prefer using `@all` or `@here`, which applies only to the people already on a room.
 
