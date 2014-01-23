@@ -134,8 +134,10 @@ Communication
 -------------
 
 * Prefer face to face communication.
-* Use Hipchat to communicate when the person(s) is unavailable or the discussion
-can be asynchronous.
+* Use Trello for conversations about a task that should accompany it through its
+lifetime.
+* Use Hipchat to communicate when the person(s) is unavailable, it is not a good
+fit for trello or the discussion can be asynchronous.
 
 ### Hipchat
 
