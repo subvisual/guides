@@ -41,8 +41,7 @@ Having your code reviewed
 * Try to respond to every comment.
 * Wait to merge the branch until another person signs off.
 * Wait to merge the branch until Continuous Integration (Semaphore, TravisCI,
-  etc.)
-  tells you the test suite is green in the branch.
+  etc.) tells you the test suite is green in the branch.
 
 Reviewing code
 --------------

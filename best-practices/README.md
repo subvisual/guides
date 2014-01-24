@@ -12,7 +12,7 @@ General
 * [Exceptions should be exceptional](http://www.readability.com/~/yichhgvu).
 * [Keep the code simple](http://www.readability.com/~/ko2aqda2).
 * Avoid premature optimizations. Get a version 1.0 out there as soon as you
-  can. Until you have some users to measure, you're optimizing based on guesses
+  can. Until you have some users to measure, you're optimizing based on guesses.
 
 Object-Oriented Design
 ----------------------
@@ -51,7 +51,6 @@ Rails
 
 * Avoid bypassing validations with methods like `save(validate: false)`,
   `update_attribute`, and `toggle`.
-* Avoid instantiating more than one object in controllers.
 * Avoid naming methods after database columns in the same class.
 * Don't change a migration after it has been merged into master if the desired
   change can be solved with another migration.
@@ -64,12 +63,15 @@ Rails
 * Keep `db/schema.rb` under version control.
 * Use only one instance variable in each view.
 * Use SQL, not `ActiveRecord` models, in migrations.
-* Use the [`.ruby-version`](https://gist.github.com/fnichol/1912050) file convention to specify the Ruby version and
-  patch level for a project.
-* Use `_url` suffixes for named routes in mailer views and [redirects](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.30). Use
-  `_path` suffixes for named routes everywhere else.
+* Use the [`.ruby-version`](https://gist.github.com/fnichol/1912050) file
+  convention to specify the Ruby version and patch level for a project.
+* Use `_url` suffixes for named routes in mailer views and
+  [redirects](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.30).
+  Use `_path` suffixes for named routes everywhere else.
 * Validate the associated `belongs_to` object (`user`), not the database column
   (`user_id`).
+* Use `bin/setup` for initial setup of the application and for development
+environment seed data.
 
 Testing
 -------
@@ -80,7 +82,8 @@ Testing
 * Disable real HTTP requests to external services with
   `WebMock.disable_net_connect!`.
 * Don't test private methods.
-* Test background jobs with a [`Delayed::Job` matcher].
+* Test background jobs with a [`Delayed::Job` matcher] (or correspondent for
+Resque, Sidekiq, etc...)
 * Use [stubs and spies] (not mocks) in isolated tests.
 * Use a single level of abstraction within scenarios.
 * Use an `it` example or test method for each execution path through the method.
@@ -100,7 +103,6 @@ Testing
 Bundler
 -------
 
-* Specify the [Ruby version] to be used on the project in the `Gemfile`.
 * Use a [pessimistic version] in the `Gemfile` for gems that follow semantic
   versioning, such as `rspec`, `factory_girl`, and `capybara`.
 * Use a [versionless] `Gemfile` declarations for gems that are safe to update
@@ -138,7 +140,7 @@ Background Jobs
 Email
 -----
 
-* Use a tool like [MailView](https://github.com/37signals/mail_view) to look at each created or updated mailer view
+* Use a tool like [LetterOpener](https://github.com/ryanb/letter_opener) to look at each created or updated mailer view
   before merging.
 
 JavaScript
@@ -168,3 +170,53 @@ Browsers
 
 * Don't support clients without Javascript.
 * Don't support IE8 or below.
+
+Shell
+-----
+* Don't parse the output of `ls`. See [here][parsingls] for details and
+  alternatives.
+* Don't use `cat` to provide a file on `stdin` to a process that accepts
+  file arguments itself.
+* Prefer a `/bin/sh` [shebang][].
+* Don't use any non-POSIX [features][bashisms] when using a `/bin/sh`
+  [shebang][].
+* If calling `cd`, have code to handle a failure to change directories.
+* If calling `rm` with a variable, ensure the variable is not empty.
+* Prefer "$@" over "$\*" unless you know exactly what you're doing.
+* Prefer `awk '/re/ { ... }'` to `grep re | awk '{ ... }'`.
+* Prefer `find -exec {} +` to `find -print0 | xargs -0`.
+* Prefer `for` loops over `while read` loops.
+* Prefer `grep -c` to `grep | wc -l`.
+* Prefer `mktemp` over using `$$` to "uniquely" name a temporary file.
+* Prefer `printf` over `echo`.
+* Prefer `sed '/re/!d; s//.../'` to `grep re | sed 's/re/.../'`.
+* Prefer `sed 'cmd; cmd'` to `sed -e 'cmd' -e 'cmd'`.
+* Prefer checking exit statuses over output in `if` statements (`if grep
+  -q ...; `, not `if [ -n "$(grep ...)" ];`).
+* Prefer reading environment variables over process output (`$TTY` not
+  `$(tty)`, `$PWD` not `$(pwd)`, etc).
+* Use `$( ... )`, not backticks for capturing command output.
+* Use `$(( ... ))`, not `expr` for executing arithmetic expressions.
+* Use `1` and `0`, not `true` and `false` to represent boolean
+  variables.
+* Use `find -print0 | xargs -0`, not `find | xargs`.
+* Use quotes around every `"$variable"` and `"$( ... )"` expression
+  unless you want them to be word-split and/or interpreted as globs.
+* Use the `local` keyword with function-scoped variables.
+* Identify common problems with [shellcheck][].
+
+[shebang]: http://en.wikipedia.org/wiki/Shebang_(Unix)
+[parsingls]: http://mywiki.wooledge.org/ParsingLs
+[bashisms]: http://mywiki.wooledge.org/Bashism
+[shellcheck]: http://www.shellcheck.net/
+
+Bash
+----
+
+In addition to Shell best practices,
+
+* Prefer `${var,,}` and `${var^^}` over `tr` for changing case.
+* Prefer `${var//from/to}` over `sed` for simple string replacements.
+* Prefer `[[` over `test` or `[`.
+* Prefer process substitution over a pipe in `while read` loops.
+* Use `((` or `let`, not `$((` when you don't need the result

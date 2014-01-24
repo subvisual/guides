@@ -8,14 +8,7 @@ Git
 
 * Avoid including files in source control that are specific to your
   development machine or process.
-* Delete local and remote feature branches after merging.
-* Perform work in a feature branch.
-* Avoid merge commits by using a [rebase workflow](https://github.com/thoughtbot/guides/tree/master/protocol#merge).
-* Prefix feature branch names with your initials.
-* Rebase frequently to incorporate upstream changes.
-* Squash multiple trivial commits into a single commit.
-* Write a [good commit message](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html).
-* Use a [pull request](https://help.github.com/articles/using-pull-requests/) for code reviews.
+* Follow the [protocol](/protocol)
 
 Formatting
 ----------
@@ -56,7 +49,6 @@ Sass
 * Use a blank line above selector that has styles.
 * Prefer hex color codes `#000`.
 * Use `//` for comment blocks not `/* */`.
-* Use a space between selector and `{`.
 * Use single quotation marks for attribute selectors and property values.
 * Use only lowercase, including colors.
 * Don't add a unit specification after `0` values, unless required by a mixin.
@@ -84,9 +76,12 @@ Sass
 * Avoid nesting within a media query.
 
 ### Organization
+* Use Compass or Bourbon for a Sass library
+* Use Normalize as a browser reset
 * Use HTML structure for ordering of selectors. Don't just put styles at the
   bottom of the Sass file.
-* Use Compass.
+* Prefer the same file structure that is found in app/views
+* Avoid having files longer than 100 lines
 
 CoffeeScript
 ------------
@@ -109,9 +104,8 @@ Ruby
 * Avoid organizational comments (`# Validations`).
 * Avoid ternary operators (`boolean ? true : false`). Use multi-line `if`
   instead to emphasize code branches.
-* Avoid `{...}` for blocks. Prefer `do..end`.
-* Define the project's [Ruby version in the
-  Gemfile](http://gembundler.com/man/gemfile.5.html#RUBY-ruby-).
+* Follow [Jim Weirich's rule for
+  blocks](http://onestepback.org/index.cgi/Tech/Ruby/BraceVsDoEnd.rdoc)
 * Avoid explicit return statements.
 * Avoid using semicolons.
 * Prefer `detect` over `find`.
@@ -133,9 +127,13 @@ Ruby
 ERb
 ---
 
-[Sample](/groupbuddies/guides/blob/master/style/samples/erb.rb)
+* Use Slim
 
-* When wrapping long lines, keep the method name on the same line as the ERb
+Slim
+----
+[Sample](/groupbuddies/guides/blob/master/style/samples/slim.rb)
+
+* When wrapping long lines, keep the method name on the same line as the Slim
   interpolation operator and keep each method argument on its own line.
 * Prefer double quotes for attributes.
 
@@ -190,24 +188,14 @@ Testing
 
 [Sample](/groupbuddies/guides/blob/master/style/samples/testing.rb)
 
-* Avoid `its`, `let`, `let!`, `specify`, `before`, and `subject`.
-* Avoid using instance variables in tests.
-* Don't prefix `it` block descriptions with 'should'.
-* Don't name outer `describe` blocks.
-* Use `context` blocks for each method under test and name them accordingly. Use `.method`
-  for class methods and `#method` for instance methods.
+* Follow the [best practices](/best-practices#testing)
 * Prefer factories to fixtures.
-* Order factories.rb: sequences, traits, factory definitions.
-* Order factory attributes: implicit attributes, explicit attributes,
-  child factory definitions. Each section's attributes are alphabetical.
-* Order factory definitions alphabetically by factory name.
 * Avoid the `private` keyword in specs.
 * Prefer `eq` to `==` in RSpec.
 * Separate setup, exercise, verification, and teardown phases with newlines.
 * Use RSpec's [`expect` syntax](http://myronmars.to/n/dev-blog/2012/06/rspecs-new-expectation-syntax).
 * Use `not_to` instead of `to_not` in RSpec expectations.
 * Use an `it` example for each execution path through the method.
-* Use [stubs and spies](http://goo.gl/EciDJ) (not mocks) in isolated tests.
 * Use shared contexts but include them explicitly with `include_context`
 
 #### Acceptance Tests
@@ -239,5 +227,5 @@ Testing
 [Sample](samples/testing.rb)
 
 * Don't prefix `it` block descriptions with 'should'.
-* Name outer `describe` blocks after the method under test. Use `.method`
+* Use `context` blocks for each method under test and name them accordingly. Use `.method`
   for class methods and `#method` for instance methods.
