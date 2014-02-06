@@ -24,7 +24,9 @@ Set up Rails app
 
 Set up the app's dependencies.
 
-    cd dummy
+    cd your/projects/folder
+    git clone git@github.com:groupbuddies/name-of-the-app.git
+    cd name-of-the-app
     bin/setup
 
 Write a feature
@@ -37,8 +39,10 @@ Create a local feature branch based off dev.
     git rebase
     git checkout -b <branch-name>
 
+In case there is not dev branch, do the same for the master branch.
+
 Prefix the branch name with your initials. If pairing follow [this
-guides](http://robots.thoughtbot.com/how-to-create-github-avatars-for-pairs).
+guide](http://robots.thoughtbot.com/how-to-create-github-avatars-for-pairs).
 
 Rebase frequently to incorporate upstream changes.
 
@@ -97,12 +101,14 @@ When satisfied, they comment on the pull request `Ready to merge.`
 Merge
 -----
 
+*Remember: Any reference to dev can be changed to master.*
+
 Rebase interactively or merge (follow what the project team is doing). Squash
 commits like "Fix whitespace" into one or a small number of valuable commit(s).
 Edit commit messages to reveal intent.
 
     git fetch origin
-    git merge origin/dev // or git rebase -i origin/dev
+    git rebase origin/dev // or git rebase -i origin/dev
     bundle exec rspec && bundle exec cucumber
 
 View a list of new commits. View changed files. Merge branch into dev.
@@ -110,7 +116,7 @@ View a list of new commits. View changed files. Merge branch into dev.
     git log origin/dev..<branch>
     git diff --stat origin/dev
     git checkout dev
-    git merge <branch> --ff-only
+    git merge --no-ff <branch> // if only 1 commit git merge <branch>
     git push
 
 Delete your remote feature branch.
@@ -123,6 +129,8 @@ Delete your local feature branch.
 
 Deploy
 ------
+
+Enjoy the Semaphoreapp automatic deploy to staging if it is set up.
 
 Use the Semaphoreapp on-click deploy button, if it is set up. Alternatively, run:
 
