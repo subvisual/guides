@@ -1,7 +1,7 @@
 Communication Protocol
 ======================
 
-A guide for communication within the teams.
+A guide for communication within a team.
 
 General
 -------
