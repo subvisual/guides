@@ -1,8 +1,3 @@
-Protocol
-========
-
-A guide for getting things done.
-
 Create Rails app
 ----------------
 
