@@ -119,7 +119,7 @@ Alternatively, configure it yourself:
 
 * Now you can deploy it by running:
 
-    bundle exec cap [production|staging] deploy
+        bundle exec cap [production|staging] deploy
 
   Or you can set up Semaphoreapp by going to "settings > Deployment > Add
   Server". The deploy commands should be:
