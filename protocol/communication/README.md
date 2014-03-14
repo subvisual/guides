@@ -1,5 +1,10 @@
-Communication
--------------
+Communication Protocol
+======================
+
+A guide for communication within the teams.
+
+General
+-------
 
 * Prefer face to face communication.
 * Use Trello for conversations about a task that should accompany it through its
@@ -7,7 +12,8 @@ lifetime.
 * Use Hipchat to communicate when the person(s) is unavailable, it is not a good
 fit for trello or the discussion can be asynchronous.
 
-### Hipchat
+Hipchat
+-------
 
 There is a room for each project, one for management (50th Floor), one for
 generic talk of the company's policies (Group Buddies), one for generic talk on

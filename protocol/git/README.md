@@ -1,3 +1,8 @@
+Git Protocol
+============
+
+A guide for programming with version control.
+
 Write a feature
 ---------------
 
