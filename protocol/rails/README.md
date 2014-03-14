@@ -47,20 +47,20 @@ and the following files:
 
   * `env.vagrant`
 
-      DIGITAL_OCEAN_CLIENT_ID=clientid
-      DIGITAL_OCEAN_API_KEY=verysecretkey
+        DIGITAL_OCEAN_CLIENT_ID=clientid
+        DIGITAL_OCEAN_API_KEY=verysecretkey
 
   * `server_configs.yaml`
 
-     ---
-     project_name:
-       deploy_password: "iamasecret"
-       production:
-         db_password: "database password"
-         url: "app.project_name.com"
-       staging:
-         db_password: "staging database password"
-         url: "test.project_name.com"
+        ---
+        project_name:
+          deploy_password: "iamasecret"
+          production:
+            db_password: "database password"
+            url: "app.project_name.com"
+          staging:
+            db_password: "staging database password"
+            url: "test.project_name.com"
 
 * Create a `deploy` folder in the repo with the files you just created
 
@@ -70,28 +70,28 @@ and the following files:
 
   * Create a `server_configs.pp` with the following structure:
 
-     $data = hiera('project_name')
+        $data = hiera('project_name')
 
-     class { 'gb':
-       ruby_version    => 'ruby version for the project',
-       deploy_password => $data[deploy_password],
-     }
+        class { 'gb':
+          ruby_version    => 'ruby version for the project',
+          deploy_password => $data[deploy_password],
+        }
 
-     gb::app::rails { 'project_name_production':
-       db_pass => $data[production][db_password],
-       url     => $data[production][url],
-     }
+        gb::app::rails { 'project_name_production':
+          db_pass => $data[production][db_password],
+          url     => $data[production][url],
+        }
 
-     gb::app::rails { 'project_name_staging':
-       db_pass   => $data[staging][db_password],
-       url       => $data[staging][url],
-       rails_env => 'staging',
-     }
+        gb::app::rails { 'project_name_staging':
+          db_pass   => $data[staging][db_password],
+          url       => $data[staging][url],
+          rails_env => 'staging',
+        }
 
-* Add the default [`hiera.yaml`](/protocol/rails/samples/hiera.yaml),
-  [`Puppetfile`](/protocol/rails/samples/Puppetfile),
-  [`upgrade_puppet.sh`](/protocol/rails/samples/upgrade_puppet.sh) and
-  [`Vagrantfile`](/protocol/rails/samples/Vagrantfile).
+  * Add the default [`hiera.yaml`](/protocol/rails/samples/hiera.yaml),
+    [`Puppetfile`](/protocol/rails/samples/Puppetfile),
+    [`upgrade_puppet.sh`](/protocol/rails/samples/upgrade_puppet.sh) and
+    [`Vagrantfile`](/protocol/rails/samples/Vagrantfile).
 
 * Run `librarian-puppet install`
 
@@ -124,8 +124,8 @@ Alternatively, configure it yourself:
   Or you can set up Semaphoreapp by going to "settings > Deployment > Add
   Server". The deploy commands should be:
 
-    bundle install --path vendor/bundle --without default production assets test development
-    bundle exec cap [production|staging] deploy
+        bundle install --path vendor/bundle --without default production assets test development
+        bundle exec cap [production|staging] deploy
 
 Make sure everything's ok. Sometimes you'll need to manually restart services.
 
