@@ -1,0 +1,22 @@
+require 'dotenv'
+Dotenv.load('env.vagrant')
+
+Vagrant.configure('2') do |config|
+  config.vm.provider :digital_ocean do |provider, override|
+    override.ssh.private_key_path = '~/.ssh/id_rsa'
+    override.vm.box = 'digital_ocean'
+    override.vm.box_url = 'https://github.com/smdahlen/vagrant-digitalocean/raw/master/box/digital_ocean.box'
+
+    provider.client_id = ENV['DIGITAL_OCEAN_CLIENT_ID']
+    provider.api_key = ENV['DIGITAL_OCEAN_API_KEY']
+    provider.region = 'Amsterdam 2'
+
+    override.vm.provision :shell, path: 'upgrade_puppet.sh'
+    override.vm.provision :puppet do |puppet_conf|
+      puppet_conf.module_path = 'modules'
+      puppet_conf.manifests_path = '.'
+      puppet_conf.manifest_file = 'server_configs.pp'
+      puppet_conf.options = '--hiera_config /vagrant/hiera.yaml'
+    end
+  end
+end
