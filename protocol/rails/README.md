@@ -43,7 +43,7 @@ Set up production environment
   the`:deploy` group
 
 * In the shared Dropbox folder "GB Classified", go to "Sysadmin/project_name"
-and the following files:
+create the following files:
 
   * `env.vagrant`
     ```
@@ -73,7 +73,7 @@ and the following files:
   * Create a `server_configs.pp` with the following structure:
 
     ```
-    $data = hiera('project_name')
+    $data = hiera('server_configs')
 
     class { 'gb':
       ruby_version    => 'ruby version for the project',
@@ -97,11 +97,14 @@ and the following files:
     [`upgrade_puppet.sh`](/protocol/rails/samples/upgrade_puppet.sh) and
     [`Vagrantfile`](/protocol/rails/samples/Vagrantfile).
 
-* Run `librarian-puppet install`
+* Run the following commands:
 
-* Run `vagrant plugin install vagrant-digitalocean`
-
-* Run `vagrant up --provider=digital_ocean`
+    ```
+    librarian-puppet install
+    vagrant plugin install vagrant-digitalocean
+    vagrant plugin install dotenv
+    vagrant up --provider=digital_ocean
+    ```
 
 Deploy
 ------
