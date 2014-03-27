@@ -49,13 +49,13 @@ Sass
 * Use a blank line above selector that has styles.
 * Prefer hex color codes `#000`.
 * Use `//` for comment blocks not `/* */`.
-* Use single quotation marks for attribute selectors and property values.
+* Use single or double quotes consistently. Preference is for double quotes, e.g., `content: ""`.
 * Use only lowercase, including colors.
 * Don't add a unit specification after `0` values, unless required by a mixin.
 
 ### Order
+* Place scoped variables, @extends and @includes (excluding media query stuff) at the top of your declaration list, in that order.
 * Use alphabetical order for declarations.
-* Place @extends and @includes at the top of your declaration list.
 * Place media queries directly after the declaration list.
 * Place concatenated selectors second.
 * Place pseudo states and elements third.
@@ -65,23 +65,22 @@ Sass
 * Don't use ID's for style.
 * Use meaningful names: `$visual-grid-color` not `$color` or `$vslgrd-clr`.
 * Use ID and class names that are as short as possible but as long as necessary.
+* Use one selector per line.
+* If :hover pseudo class is styled, :focus should also be styled for accessibility. Focus styles should never be removed.
 * Avoid using the direct descendant selector `>`.
 * Avoid nesting more than 3 selectors deep.
 * Don't nest more than 6 selectors deep.
-* Use HTML tags on vague classes that need a qualifier like `header.application` not `.main`.
-* Avoid using the HTML tag in the class name: `section.news` not `section.news-section`.
-* Avoid using HTML tags on classes for generic markup `<div>`, `<span>`: `.widgets` not `div.widgets`.
+* Avoid using the HTML tag in the class name: `/*section*/.news` not `/*section*/.news-section`.
 * Avoid using HTML tags on classes with specific class names like `.featured-articles`.
-* Avoid using comma delimited selectors.
+* Don't qualify selectors: `.widgets` not `div.widgets`.
 * Avoid nesting within a media query.
 
 ### Organization
-* Use Compass or Bourbon for a Sass library
-* Use Normalize as a browser reset
+* Use Compass or Bourbon for a Sass library.
+* Use Normalize as a browser reset.
 * Use HTML structure for ordering of selectors. Don't just put styles at the
   bottom of the Sass file.
-* Prefer the same file structure that is found in app/views
-* Avoid having files longer than 100 lines
+* Avoid having files longer than 100 lines.
 
 CoffeeScript
 ------------
