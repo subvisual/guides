@@ -37,18 +37,18 @@ Follow the normal [Git Protocol](/protocol/git)
 Set up production environment
 -----------------------------
 
-* Add [`vagrant`](https://github.com/mitchellh/vagrant),
-  [`librarian-puppet`](https://github.com/rodjek/librarian-puppet) and
+* Add [`librarian-puppet`](https://github.com/rodjek/librarian-puppet) and
   [`puppet`](https://github.com/puppetlabs/puppet) to the Gemfile, in
   the`:deploy` group
+
+* Install [`vagrant`](https://www.vagrantup.com/)
 
 * In the shared Dropbox folder "GB Classified", go to "Sysadmin/project_name"
 create the following files:
 
   * `env.vagrant`
     ```
-    DIGITAL_OCEAN_CLIENT_ID=clientid
-    DIGITAL_OCEAN_API_KEY=verysecretkey
+    DIGITAL_OCEAN_TOKEN=token
     ```
 
   * `server_configs.yaml`
@@ -97,14 +97,14 @@ create the following files:
     [`upgrade_puppet.sh`](/protocol/rails/samples/upgrade_puppet.sh) and
     [`Vagrantfile`](/protocol/rails/samples/Vagrantfile).
 
-* Run the following commands:
+  * Run the following commands:
 
-    ```
-    librarian-puppet install
-    vagrant plugin install vagrant-digitalocean
-    vagrant plugin install dotenv
-    vagrant up --provider=digital_ocean
-    ```
+      ```
+      bundle exec librarian-puppet install
+      vagrant plugin install vagrant-digitalocean
+      vagrant plugin install dotenv
+      vagrant up --provider=digital_ocean
+      ```
 
 Deploy
 ------
