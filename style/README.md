@@ -103,8 +103,7 @@ Ruby
 * Avoid organizational comments (`# Validations`).
 * Avoid ternary operators (`boolean ? true : false`). Use multi-line `if`
   instead to emphasize code branches.
-* Follow [Jim Weirich's rule for
-  blocks](http://onestepback.org/index.cgi/Tech/Ruby/BraceVsDoEnd.rdoc)
+* Use `do...end` for multi line blocks and `{...}` for one line blocks.
 * Avoid explicit return statements.
 * Avoid using semicolons.
 * Prefer `detect` over `find`.
