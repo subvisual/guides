@@ -103,14 +103,15 @@ Ruby
 * Avoid organizational comments (`# Validations`).
 * Avoid ternary operators (`boolean ? true : false`). Use multi-line `if`
   instead to emphasize code branches.
-* Use `do...end` for multi line blocks and `{...}` for one line blocks.
 * Avoid explicit return statements.
 * Avoid using semicolons.
+* Avoid assignments on conditionals.
 * Prefer `detect` over `find`.
 * Prefer `inject` over `reduce`.
 * Prefer `map` over `collect`.
 * Prefer `select` over `find_all`.
 * Prefer single quotes for strings.
+* Use `do...end` for multi line blocks and `{...}` for one line blocks.
 * Use `_` for unused block parameters.
 * Use `%{}` for single-line strings needing interpolation and double-quotes.
 * Use `&&` and `||` for Boolean expressions.
@@ -121,6 +122,7 @@ Ruby
 * Use `def` with parentheses when there are arguments.
 * Use `each`, not `for`, for iteration.
 * Use heredocs for multi-line strings.
+* Use `%w()` and `%i()` for hard-coded lists of strings and symbols.
 
 ERb
 ---
