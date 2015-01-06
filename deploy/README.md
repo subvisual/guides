@@ -6,7 +6,7 @@ A guide for deploying web apps in a sane and repeatable way
 
 # Server setup
 
-* Use [DigitalOcean](https://www.digitalocean.com/)
+* Use [DigitalOcean](https://www.digitalocean.com/). Be sure to select the `Enable Backups` feature, which can only be enabled during creation
 * Use Ubuntu 12.04 (Precise Pangolin) x64, unless you have specific reasons to do otherwise (upstart has issues in later versions)
 * Provision the server using [gb-puppet](https://github.com/groupbuddies/gb-puppet). Follow the README there for the appropriate steps.
 * After the initial setup, avoid SSH'ing to the server, unless strictly necessary.
