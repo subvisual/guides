@@ -11,6 +11,7 @@ Guides for getting things done, programming well, and programming in style.
   * [Rails](/protocol/rails)
 * [Style](/style)
 * [Trello](/trello)
+* [Github](/github)
 
 High level guidelines:
 

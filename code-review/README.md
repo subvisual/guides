@@ -91,3 +91,7 @@ Ruby on Rails review
 * Review whether new scheduler (`cron`) tasks have been added and whether there
   is a related todo in the project management system to add it during the
   staging and production deploys.
+* Review whether there are new requirements being added to the production or staging
+machine. This includes new software packages, new secret keys in the app's environment,
+background services, network configurations, etc. Ensure that the author or the SysAdmin
+makes the necessary server changes to accommodate the new code.

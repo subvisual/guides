@@ -8,12 +8,13 @@ A guide for deploying web apps in a sane and repeatable way
 
 * Use [DigitalOcean](https://www.digitalocean.com/). Be sure to select the `Enable Backups` feature, which can only be enabled during creation
 * Use Ubuntu 12.04 (Precise Pangolin) x64, unless you have specific reasons to do otherwise (upstart has issues in later versions)
-* Provision the server using [gb-puppet](https://github.com/groupbuddies/gb-puppet). Follow the README there for the appropriate steps.
+* Provision the server using [GB Puppet](https://github.com/groupbuddies/gb-puppet). Follow the README there for the appropriate steps.
 * After the initial setup, avoid SSH'ing to the server, unless strictly necessary.
 * Store all required data (passwords, IP address, any decisions made, etc) in a secure location, but accessible to the team
 
 # App setup
 
+* Provision the app using [GB Puppet's app provisioning script](https://github.com/groupbuddies/gb-puppet). Follow the README there for the appropriate steps.
 * Never include sensitive production data in the repo (even if it's private)
 * Include a `Procfile.production` (and `Procfile.staging`, if applicable)
 * A `.env` file should exist in the server with all env data required (including PATH)
