@@ -3,17 +3,12 @@ Style
 
 A guide for programming in style.
 
-* [JS](/js)
-* [Ruby](/ruby)
-* [SASS](/sass)
-* [Testing](/testing)
+In addition to the general guidelines below, we have the following more detailed, language/framework specific style guides:
 
-Git
----
-
-* Avoid including files in source control that are specific to your
-  development machine or process.
-* Follow the [protocol](/protocol)
+* [JS](js)
+* [Ruby](ruby)
+* [Sass](sass)
+* [Templating](templating)
 
 Formatting
 ----------
@@ -44,32 +39,3 @@ Naming
   even if the acronym is the entire name (`class Html` not `class HTML`).
 * Spend time thinking on the name of things so that you don't spend afterwards
   trying to decifer your own code.
-
-CoffeeScript
-------------
-
-* Initialize arrays using `[]`.
-* Initialize empty objects and hashes using `{}`.
-* Use `CamelCase` for classes, `lowerCamelCase` for variables and functions,
-  `SCREAMING_SNAKE_CASE` for constants, `_single_leading_underscore` for
-  private variables and functions.
-* Prefer `== ` or `===` to `is`.
-* Prefer `||` and `&&` to `or` and `and`.
-
-ERb
----
-
-* Use Slim
-
-Slim
-----
-[Sample](samples/slim.rb)
-
-* When wrapping long lines, keep the method name on the same line as the Slim
-  interpolation operator and keep each method argument on its own line.
-* Prefer double quotes for attributes.
-
-HTML
-----
-
-* Prefer double quotes for attributes.

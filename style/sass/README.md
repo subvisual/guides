@@ -1,7 +1,7 @@
-SASS Style Guide
+Sass Style Guide
 =====
 ### Formatting
-* Use the SASS syntax.
+* Use the Sass syntax.
 * Use hyphens when naming mixins, extends, classes & variables: `span-columns` not `span_columns` or `spanColumns`.
 * Use space between property and value: `width: 20px` not `width:20px`.
 * Use a blank line above selector that has styles.

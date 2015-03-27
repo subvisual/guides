@@ -10,6 +10,10 @@ Guides for getting things done, programming well, and programming in style.
   * [Git](/protocol/git)
   * [Rails](/protocol/rails)
 * [Style](/style)
+  * [Ruby](/style/ruby)
+  * [Sass](/style/sass)
+  * [JavaScript](/style/js)
+  * [Templating](/style/templating)
 * [Trello](/trello)
 * [Github](/github)
 
