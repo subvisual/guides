@@ -38,4 +38,4 @@ Naming
 * Treat acronyms as words in names (`XmlHttpRequest` not `XMLHTTPRequest`),
   even if the acronym is the entire name (`class Html` not `class HTML`).
 * Spend time thinking on the name of things so that you don't spend afterwards
-  trying to decifer your own code.
+  trying to decipher your own code.
