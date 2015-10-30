@@ -18,7 +18,7 @@ Github
 
 * Open Github issues to file bug reports, and to suggest small improvements or refactors.
 * Define labels and milestones in your issues, if applicable.
-* Tag a person (or [team](https://github.com/orgs/groupbuddies/teams)) if you need their input specifically.
+* Tag a person (or [team](https://github.com/orgs/subvisual/teams)) if you need their input specifically.
 * If your Pull Requests fixes one or more issues, link to them in the discussion.
 * If you're working on an issue, assign it to yourself.
 
@@ -37,4 +37,3 @@ project maybe someone else can pitch in or at least read it, if not use the #ran
 If the conversation does not fit any of the channels, question
 yourself if you should be having it on the company's Slack.
 * Prefer using `@channel`, which applies only to the people already on a channel.
-

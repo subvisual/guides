@@ -11,8 +11,7 @@ Create Rails app
     rails new dummy
 
 * Create a github repo on http://github.com/new and follow the instructions to add
-your code to the repo. Create the repo on the groupbuddies organizations. Create
-the repo on the groupbuddies organization.
+your code to the repo. Create the repo on the Subvisual organizations.
 
 * Create a `dev` branch.
 
@@ -25,7 +24,7 @@ Set up Rails app
 Set up the app's dependencies.
 
     cd your/projects/folder
-    git clone git@github.com:groupbuddies/name-of-the-app.git
+    git clone git@github.com:subvisual/name-of-the-app.git
     cd name-of-the-app
     bin/setup
 

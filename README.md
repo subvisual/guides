@@ -35,10 +35,8 @@ Credits
 
 Thanks to [thoughtbot](http://thoughtbot.com/) from whom this guides are based.
 
-![groupbuddies](http://www.groupbuddies.com/logo.png)
+This guides are maintained by [Subvisual](https://subvisual.co)
+The names and logos for Subvisual are trademarks of GB-Software As A Service, Lda.
 
-This guides are maintained by [Group Buddies](http://groupbuddies.com)
-The names and logos for Group Buddies are trademarks of GB-Software As A Service, Lda.
-
-This guides are © 2014 GB-Software As A Service, Lda. They are distributed under the [Creative Commons
+This guides are © 2015 GB-Software As A Service, Lda. They are distributed under the [Creative Commons
 Attribution License](http://creativecommons.org/licenses/by/3.0/).

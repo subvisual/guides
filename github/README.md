@@ -23,4 +23,4 @@ Working on Issues/Pull Requests
 * If you're working on an issue, assign it to yourself.
 * Submit a Pull Request with the fix.
 * If your Pull Requests fixes one or more issues, link to them in the discussion.
-* Tag a person (or [team](https://github.com/orgs/groupbuddies/teams)) if you need their input specifically.
+* Tag a person (or [team](https://github.com/orgs/subvisual/teams)) if you need their input specifically.
