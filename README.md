@@ -14,6 +14,7 @@ Guides for getting things done, programming well, and programming in style.
   * [Sass](/style/sass)
   * [JavaScript](/style/js)
   * [Templating](/style/templating)
+* [Linters](/linters)
 * [Trello](/trello)
 * [Github](/github)
 
