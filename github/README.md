@@ -24,3 +24,8 @@ Working on Issues/Pull Requests
 * Submit a Pull Request with the fix.
 * If your Pull Requests fixes one or more issues, link to them in the discussion.
 * Tag a person (or [team](https://github.com/orgs/subvisual/teams)) if you need their input specifically.
+
+Creating a repository
+-----------------------
+
+* If you are creating a Github repository, use the [templates](templates).
