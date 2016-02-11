@@ -46,5 +46,8 @@ Style/SingleLineBlockParams:
 Style/MultilineOperationIndentation:
   EnforcedStyle: indented
 
-Style/TrailingComma:
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInLiteral:
   EnforcedStyleForMultiline: comma
