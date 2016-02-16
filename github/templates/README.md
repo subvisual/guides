@@ -89,6 +89,6 @@ About
 
 ProjectName is maintained by [Subvisual](http://subvisual.co).
 
-[![Subvisual](subvisual_logo_with_name.png)](http://subvisual.co)
+[![Subvisual](https://raw.githubusercontent.com/subvisual/guides/master/github/templates/subvisual_logo_with_name.png)](http://subvisual.co)
 
 If you need to contact the maintainer use [this](https://trello.com/b/svB6ZSce/areas-of-responsability-dris) trello board, or <a href="mailto:contact@subvisual.co">reach out to us</a> if you don't have access.
