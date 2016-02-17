@@ -27,21 +27,17 @@ Short project description. You can use the client's pitch. No more than ten line
 Setup
 -----
 
-A set of instructions to install the project. It can start with a list of dependencies, like databases, and finish with the instructions. For instance:
+A set of instructions to install the project. It can start with a list of dependencies, like databases, and finish with the instructions, or it can be a simple list of commands. For instance:
 
-First clone the repository to your file system:
-
-```
-git clone git@github.com:subvisual/guides.git
-```
-
-After, run the setup script:
+First, clone & setup the repository:
 
 ```
+git clone git@github.com:subvisual/PROJECT_NAME.git
+cd PROJECT_NAME
 bin/setup
 ```
 
-To finish, open the file `.env` and replace the values accordingly.
+After that, open the `.env` file in your editor and fill in the required secret values.
 
 Development
 -----------
