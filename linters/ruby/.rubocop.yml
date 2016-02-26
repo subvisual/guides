@@ -10,6 +10,7 @@ AllCops:
     - "vendor/**/*"
     - "node_modules/**/*"
     - "spec/factories.rb"
+  TargetRubyVersion: 2.3
 
 Metrics/LineLength:
   Enabled: false
