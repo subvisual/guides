@@ -13,6 +13,13 @@ General
 * [Keep the code simple](http://www.readability.com/~/ko2aqda2).
 * Avoid premature optimizations. Get a version 1.0 out there as soon as you
   can. Until you have some users to measure, you're optimizing based on guesses.
+* Use `bin/setup` for initial setup of the project and for development
+  environment seed data. After running this script in a clean environment you
+  should be able to run the tests and those should pass.
+* Use `bin/server` for starting all the processes required to run the project
+  in a development environment, when suitable.
+* Use `bin/deploy` for deploying the project to staging and production
+  environments, when suitable.
 
 Object-Oriented Design
 ----------------------
@@ -70,8 +77,6 @@ Rails
   Use `_path` suffixes for named routes everywhere else.
 * Validate the associated `belongs_to` object (`user`), not the database column
   (`user_id`).
-* Use `bin/setup` for initial setup of the application and for development
-environment seed data.
 
 Testing
 -------
