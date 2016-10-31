@@ -8,3 +8,5 @@ Files to configure the linters we use for each language and technology
 
 * CSS
   * [Scss](/linters/css/.scss-lint.yml)
+* Elixir
+  * [Credo](/linters/elixir/.credo.exs)
