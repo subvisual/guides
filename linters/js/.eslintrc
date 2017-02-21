@@ -1,0 +1,7 @@
+{
+  "extends": "airbnb",
+  "rules": {
+    "consistent-return": 0,
+    "react/no-multi-comp": [2, { "ignoreStateless": true }]
+  }
+}

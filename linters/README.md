@@ -10,4 +10,6 @@ Files to configure the linters we use for each language and technology
 * Elixir
   * [Credo](/linters/elixir/.credo.exs)
 * SVG Files
-* * [SVGO](/linters/svg/.svgo.yml)
+  * [SVGO](/linters/svg/.svgo.yml)
+* JavaScript
+  * [ESLint](/linters/js/README.md)

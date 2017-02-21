@@ -6,7 +6,7 @@ Guides for programing JavaScript in style
 General
 ---
 * Use [ESLint](http://eslint.org/).
-* Always use `use strict`.
+* Always use ES6.
 
 Parens and Braces
 ---
@@ -157,14 +157,3 @@ if (!foo) {
   // foo is false
 }
 ```
-
-CoffeeScript
-------------
-
-* Initialize arrays using `[]`.
-* Initialize empty objects and hashes using `{}`.
-* Use `CamelCase` for classes, `lowerCamelCase` for variables and functions,
-  `SCREAMING_SNAKE_CASE` for constants, `_single_leading_underscore` for
-  private variables and functions.
-* Prefer `== ` or `===` to `is`.
-* Prefer `||` and `&&` to `or` and `and`.
