@@ -17,6 +17,7 @@ Guides for getting things done, programming well, and programming in style.
 * [Linters](/linters)
 * [Trello](/trello)
 * [Github](/github)
+* [DevOps](/devops)
 
 High level guidelines:
 

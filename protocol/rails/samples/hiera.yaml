@@ -1,9 +1,0 @@
----
-:hierarchy:
-  - server_configs
-
-:backends:
-  - yaml
-
-:yaml:
-  :datadir: '/vagrant'
