@@ -1,7 +1,6 @@
 # Resources
 
-A repository for various courses, guides, blog posts that we find useful for our
-development processes.
+A repository for various courses, guides, blog posts that we find useful for our processes.
 
 ## Courses
 
