@@ -16,18 +16,46 @@ Short project description. You can use the client's pitch. No more than ten line
 
 **Table of Contents**
 
+* [Installation](#installation)
 * [Setup](#setup)
 * [Development](#development)
 * [Deployment](#deployment)
 * [More Sections](#more-sections)
 * [Contribution Guidelines](#contribution-guidelines)
 * [Resources](#resources)
-* [Contacts](#contacts)
+* [About](#about)
+
+Installation
+------------
+
+A set of instruction to include and install the project as a dependency of
+another. This might be useful if you are creating a hex package or a library.
+As an example:
+
+First, you need to add PROJECT_NAME to your list of dependencies on `mix.exs`:
+
+
+```elixir
+def deps do
+  [{:PROJECT_NAME, github: "subvisual/PROJECT_NAME"}]
+end
+```
+
+If you are using Elixir pre-1.4.0, don't forget to ensure PROJECT_NAME is
+started before your application.
+
+```elixir
+def applications do
+  [application: [:perception]]
+end
+```
+
+You may need to the dependencies defined on the [setup](#setup) section.
 
 Setup
 -----
 
-A set of instructions to install the project. It can start with a list of dependencies, like databases, and finish with the instructions, or it can be a simple list of commands. For instance:
+A set of instructions to setup the project. It can start with a list of dependencies, like databases, and finish with the instructions, or it can be a simple list of commands. For instance:
 
 First, clone & setup the repository:
 
@@ -80,15 +108,15 @@ Resources
 
 This section should list every online resource that is relevante to the project. For instance:
 
-* Link to spec file on Goole Drive
+* Link to spec file on Google Drive
 * Link to Invision files.
 * ...
 
 About
 -----
 
-ProjectName is maintained by [Subvisual](http://subvisual.co).
+PROJECT_NAME is maintained by [Subvisual](http://subvisual.co).
 
 [![Subvisual](https://raw.githubusercontent.com/subvisual/guides/master/github/templates/subvisual_logo_with_name.png)](http://subvisual.co)
 
-If you need to contact the maintainer use [this](https://trello.com/b/svB6ZSce/areas-of-responsability-dris) trello board, or <a href="mailto:contact@subvisual.co">reach out to us</a> if you don't have access.
+If you need to contact the maintainer, you may <a href="mailto:contact@subvisual.co">reach out to us</a> or use [this](https://trello.com/b/svB6ZSce/areas-of-responsability-dris) Trello board.
