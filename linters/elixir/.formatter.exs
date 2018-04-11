@@ -20,6 +20,7 @@
     field: :*,
     schema: :*,
     add: :*,
+    rename: :*,
 
     # vex
     validates: :*,
