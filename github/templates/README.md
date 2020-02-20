@@ -29,24 +29,24 @@ Installation
 ------------
 
 A set of instruction to include and install the project as a dependency of
-another. This might be useful if you are creating a hex package or a library.
+another.
+
+This is only valid if you are creating a hex package or a library.
 As an example:
 
 First, you need to add PROJECT_NAME to your list of dependencies on `mix.exs`:
-
 
 ```elixir
 def deps do
   [{:PROJECT_NAME, github: "subvisual/PROJECT_NAME"}]
 end
 ```
-
 If you are using Elixir pre-1.4.0, don't forget to ensure PROJECT_NAME is
 started before your application.
 
 ```elixir
 def applications do
-  [application: [:perception]]
+  [application: [:PROJECT_NAME]]
 end
 ```
 
