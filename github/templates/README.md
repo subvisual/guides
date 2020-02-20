@@ -117,6 +117,6 @@ About
 
 PROJECT_NAME is maintained by [Subvisual](http://subvisual.co).
 
-[![Subvisual](https://raw.githubusercontent.com/subvisual/guides/master/github/templates/subvisual_logo_with_name.png)](http://subvisual.co)
+[![Subvisual](https://raw.githubusercontent.com/subvisual/guides/master/github/templates/logos/logo@8x.png)](http://subvisual.co)
 
 If you need to contact the maintainer, you may <a href="mailto:contact@subvisual.co">reach out to us</a> or use [this](https://trello.com/b/svB6ZSce/areas-of-responsability-dris) Trello board.
