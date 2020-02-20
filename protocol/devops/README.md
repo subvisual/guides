@@ -32,7 +32,7 @@ and reproduceable way.
 For websites with no back-end, we prefer to host them on Amazon S3.
 
 The guide for this is still a TODO. In the meantime, please refer to
-[@naps62](mailto:miguel@subvisual.co) for help.
+[@naps62](mailto:miguel@subvisual.com) for help.
 
 ## DNS
 
@@ -70,7 +70,7 @@ TODO (please poke @naps62)
 [Heroku's Review Apps]: https://devcenter.heroku.com/articles/github-integration-review-apps
 [Heroku with custom root domain]: https://devcenter.heroku.com/articles/custom-domains#add-a-custom-root-domain
 [DNSimple]: https://dnsimple.com/dashboard
-[@naps62]: mailto:miguel@subvisual.co
+[@naps62]: mailto:miguel@subvisual.com
 [Let's Encrypt]: https://letsencrypt.org/
 [Sabayon]: https://github.com/dmathieu/sabayon
 [Heroku Pipelines]: https://devcenter.heroku.com/articles/pipelines

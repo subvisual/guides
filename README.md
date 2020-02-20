@@ -37,7 +37,7 @@ Credits
 
 Thanks to [thoughtbot](http://thoughtbot.com/) from whom these guides are based.
 
-These guides are maintained by [Subvisual](https://subvisual.co)
+These guides are maintained by [Subvisual](https://subvisual.com)
 The names and logos for Subvisual are trademarks of GB-Software As A Service, Lda.
 
 These guides are © 2017 GB-Software As A Service, Lda.
