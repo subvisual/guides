@@ -50,7 +50,7 @@ def applications do
 end
 ```
 
-You may need to the dependencies defined on the [setup](#setup) section.
+You may need to install the dependencies defined on the [setup](#setup) section.
 
 Setup
 -----
@@ -106,7 +106,7 @@ Contributions must follow [Subvisual's guides](https://github.com/subvisual/guid
 Resources
 ---------
 
-This section should list every online resource that is relevante to the project. For instance:
+This section should list every online resource that is relevant to the project. For instance:
 
 * Link to spec file on Google Drive
 * Link to Invision files.
