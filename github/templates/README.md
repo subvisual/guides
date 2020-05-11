@@ -112,11 +112,26 @@ This section should list every online resource that is relevant to the project. 
 * Link to Invision files.
 * ...
 
+License
+-------
+
+_Only relevant for public repositories._
+
+PROJECT_NAME is copyright &copy; 2020 Subvisual, Lda.
+
+It is open-source, made available for free, and is subject to the terms in
+its [license].
+
+
 About
 -----
 
-PROJECT_NAME is maintained by [Subvisual](http://subvisual.com).
+PROJECT_NAME was created and is maintained with :heart: by
+[Subvisual][subvisual].
 
-[![Subvisual](https://raw.githubusercontent.com/subvisual/guides/master/github/templates/logos/blue@4x.png)](http://subvisual.com)
+[![Subvisual][subvisual-logo]][subvisual]
 
-If you need to contact the maintainer, you may <a href="mailto:contact@subvisual.com">reach out to us</a> or use [this](https://trello.com/b/svB6ZSce/areas-of-responsability-dris) Trello board.
+
+[license]: ./LICENSE.txt
+[subvisual]: http://subvisual.com
+[subvisual-logo]: https://raw.githubusercontent.com/subvisual/guides/master/github/templates/logos/blue.png
